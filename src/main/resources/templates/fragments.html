@@ -27,5 +27,34 @@
         </div>
     </div>
 
+    <table th:fragment="job-table(job)" class="table table-striped job-listing">
+        <tbody>
+            <tr>
+                <th scope="row">ID</th>
+                <td th:text="${job.getId()}">Job Id</td>
+            </tr>
+            <tr>
+                <th scope="row">Name</th>
+                <td th:text="${job.getName()}">Job Name</td>
+            </tr>
+            <tr>
+                <th scope="row">Employer</th>
+                <td th:text="${job.getEmployer()}">Job Employer</td>
+            </tr>
+            <tr>
+                <th scope="row">Location</th>
+                <td th:text="${job.getLocation()}">Job Location</td>
+            </tr>
+            <tr>
+                <th scope="row">Position Type</th>
+                <td th:text="${job.getPositionType()}">Job Position Type</td>
+            </tr>
+            <tr>
+                <th scope="row">Skill</th>
+                <td th:text="${job.getCoreCompetency()}">Job Skill</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
