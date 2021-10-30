@@ -22,7 +22,7 @@
             <ul class="nav navbar-nav">
                 <th:block th:each="action : ${actions}">
                     <li>
-                        <a th:href="@{${action.key}}" th:text="${action.value}">Action</a>
+                        <a th:href="@{${'/' + action.key}}" th:text="${action.value}">Action</a>
                     </li>
                 </th:block>
 
