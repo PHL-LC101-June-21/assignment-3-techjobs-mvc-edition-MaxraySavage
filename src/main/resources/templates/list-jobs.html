@@ -12,6 +12,9 @@
 
     <!-- TODO #1 - Use a loop to display job results in a table. -->
 
+    <th:block th:each="job : ${jobs}">
+        <table th:replace="fragments :: job-table(${job})"></table>
+    </th:block>
 </div>
 
 </body>
